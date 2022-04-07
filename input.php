@@ -56,7 +56,7 @@
 <main class="form-signin">
   <form method="POST">
     <img class="mb-4" src="assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-    <a href="http://localhost:8080/pickup/input.php" style="color: black;"><h1 class="h3 mb-3 fw-normal">Please Scan Barcode</h1></a>
+    <a href="http://localhost:8080/pickup/pickup.v2" style="color: black;"><h1 class="h3 mb-3 fw-normal">Please Scan Barcode</h1></a>
 
     <div class="form-floating">
       <input type="text" class="form-control" name="nis" required autofocus autocomplete="off">
