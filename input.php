@@ -3,8 +3,9 @@
   include 'config/dbconnect.php';
   if (isset($_POST['btn-save'])) {
     $nis = $_POST['nis'];
+    $status = $_POST['status'];
 
-    if ($crud->create($nis)) {
+    if ($crud->create($nis,$status)) {
       header("Location: input.php?berhasil");
     }
     else {
@@ -60,6 +61,7 @@
 
     <div class="form-floating">
       <input type="text" class="form-control" name="nis" required autofocus autocomplete="off">
+      <input type="text" class="form-control" name="status" value='<span class="badge bg-danger">Ditunggu Orang Tua</span>' hidden>
       <label for="floatingInput">Code barcode</label>
     </div>
 
