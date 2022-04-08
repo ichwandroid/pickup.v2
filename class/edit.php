@@ -31,6 +31,7 @@ if(isset($_GET['edit_nis']))
 	if(isset($msg))
 	{
 		echo $msg;
+		header('Location: http://localhost:8080/pickup/pickup.v2/class/data-pickup1a.php');
 	}
 ?>
 </div>
