@@ -90,31 +90,6 @@
 			}
 		}
 
-		// Cari ID dan Update data
-		public function getID($nis)
-		{
-			$stmt = $this->db->prepare("SELECT * FROM tbl_scan WHERE NIS=:nis");
-			$stmt->execute(array(":nis"=>$nis));
-			$editRow=$stmt->fetch(PDO::FETCH_ASSOC);
-			return $editRow;
-		}
-
-		public function update($nis,$tanggal,$status)
-		{
-			try
-			{
-				$stmt=$this->db->prepare("UPDATE tbl_scan SET STATUS=:status,TANGGAL=tanggal WHERE NIS=:nis ");
-				$stmt->bindparam(":status",$nis);
-				$stmt->bindparam(":tanggal",$nis);
-				$stmt->bindparam(":nis",$nis);
-				$stmt->execute();
-				return true;
-			}
-			catch(PDOException $e)
-			{
-				echo $e->getMessage();
-				return false;
-			}
-		}
+		
 	}
 ?>
