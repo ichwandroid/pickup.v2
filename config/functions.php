@@ -70,7 +70,7 @@
 						<td><?php print($row['TANGGAL'])?></td>
 						<td><?php print($row['STATUS'])?></td>
 						<td align="center">
-							<a href="../edit-data.php?edit_id=<?php print($row['NIS']); ?>">
+							<a href="../class/edit.php?edit_nis=<?php print($row['NIS']); ?>">
 								<i class="bi bi-lightning-charge-fill"></i>
 							</a>
 						</td>
@@ -87,6 +87,33 @@
 					</button>
 				</div>
 				<?php
+			}
+		}
+
+		// scan id
+		public function getID($nis)
+		{
+			$stmt = $this->db->prepare("SELECT * FROM tbl_siswa WHERE NIS=:nis");
+			$stmt->execute(array(":nis"=>$nis));
+			$editRow=$stmt->fetch(PDO::FETCH_ASSOC);
+			return $editRow;
+		}
+
+		// update data
+		public function update($nis,$status)
+		{
+			try
+			{
+				$stmt=$this->db->prepare("UPDATE tbl_scan SET STATUS=:status WHERE NIS=:nis ");
+				$stmt->bindparam(":status",$status);
+				$stmt->bindparam(":nis",$nis);
+				$stmt->execute();
+				return true;
+			}
+			catch(PDOException $e)
+			{
+				echo $e->getMessage();
+				return false;
 			}
 		}
 
