@@ -1,5 +1,5 @@
 <?php
-  include 'config/dbconnect.php';
+  include '../config/dbconnect.php';
 ?>
 
 <!doctype html>
@@ -18,7 +18,7 @@
     
 
     <!-- Bootstrap core CSS -->
-<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -62,7 +62,7 @@
         </tr>
       </thead>
       <tbody>
-        <?php $crud->dataview("SELECT * FROM tbl_siswa JOIN tbl_scan ON tbl_scan.NIS = tbl_siswa.NIS ORDER BY TANGGAL DESC");?>
+        <?php $crud->dataview("SELECT * FROM tbl_siswa JOIN tbl_scan ON tbl_scan.NIS = tbl_siswa.NIS WHERE KELAS='1 A - ZAINAB R.A' ORDER BY TANGGAL DESC");?>
       </tbody>
     </table>
     
