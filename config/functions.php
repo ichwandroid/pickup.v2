@@ -9,9 +9,11 @@
 		public function create($nis,$status)
 		{
 			try {
-				$input = $this->db->prepare("INSERT INTO tbl_scan(NIS,STATUS) VALUES (:nis, :status)");
+				date_default_timezone_set("Asia/Jakarta");
+				$input = $this->db->prepare("INSERT INTO tbl_scan(NIS,STATUS,TIMESCAN) VALUES (:nis, :status, :date)");
 				$input->bindparam(":nis",$nis);
 				$input->bindparam(":status",$status);
+				$input->bindparam(":date",date('h:i:s'));
 				return $input->execute();
 			}
 			catch(PDOException $e) {
@@ -35,7 +37,7 @@
 						<td><?php print($row['NAMA_LENGKAP'])?></td>
 						<td><?php print($row['KELAS'])?></td>
 						<td><?php print($row['PANGGILAN'])?></td>
-						<td><?php print($row['TANGGAL'])?></td>
+						<td><?php print($row['TIMESCAN'])?> WIB</td>
 						<td><?php print($row['STATUS'])?></td>
 					</tr>
 					<?php
@@ -70,7 +72,7 @@
 						<td><?php print($row['TANGGAL'])?></td>
 						<td><?php print($row['STATUS'])?></td>
 						<td align="center">
-							<a href="../class/edit.php?edit_nis=<?php print($row['NIS']); ?>">
+							<a href="edit.php?edit_nis=<?php print($row['NIS']); ?>">
 								<i class="bi bi-lightning-charge-fill"></i>
 							</a>
 						</td>
