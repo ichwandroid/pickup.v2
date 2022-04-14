@@ -57,7 +57,7 @@
 <div class="container">
   <main>
     <div class="text-center" style="padding-top:40px">
-      <img class="d-block mx-auto mb-4" src="assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+      <a href="index.html"><img class="d-block mx-auto mb-4" src="assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"></a>
       <h2>Update Status Student</h2>
       <p class="lead">Update student conditions according to class conditions.</p>
 
