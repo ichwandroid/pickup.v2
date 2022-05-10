@@ -105,7 +105,7 @@
 						<td><?php print($row['STATUS'])?></td>
 						<td align="center">
 							<a href="edit.php?edit_nis=<?php print($row['NIS']); ?>">
-								<i class="bi bi-lightning-charge-fill"></i>
+								<i class="fas fa-marker"></i>
 							</a>
 						</td>
 					</tr>

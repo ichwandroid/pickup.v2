@@ -26,7 +26,7 @@
     <title>Scan Barccode</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sign-in/">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     
 
     <!-- Bootstrap core CSS -->
@@ -57,7 +57,7 @@
 <main class="form-signin">
   <form method="POST">
     <a href="index.html">
-      <img class="mb-4" src="assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+      <h1><i class="fas fa-dragon"></i></h1>
     </a>
     <h1 class="h3 mb-3 fw-normal">Please Scan Barcode</h1>
 

@@ -26,7 +26,7 @@
     <title>List groups · Bootstrap v5.1</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/list-groups/">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     
 
     <!-- Bootstrap core CSS -->
@@ -57,7 +57,7 @@
 <div class="container">
   <main>
     <div class="text-center" style="padding-top:40px">
-      <a href="index.html"><img class="d-block mx-auto mb-4" src="assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"></a>
+      <a href="index.html"><h2><i class="fas fa-dragon"></i></h2></a>
       <h2>Update Status Student</h2>
       <p class="lead">Update student conditions according to class conditions.</p>
 
