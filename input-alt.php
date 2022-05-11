@@ -95,7 +95,7 @@
     <form method='post'>
 
       <div class="list-group">
-        <input type="text" id="nis" name="nis" placeholder="Cari Siswa..." class="form-control" />
+        <input type="text" id="nis" name="nis" placeholder="Cari Siswa..." class="form-control" autocomplete="off" />
         <ol style="padding-left: 1px;" id="resultlist"></ol>
           <i>Silahkan ketik Nama Lengkap / Nama Panggilan / Kelas</i>
       </div>

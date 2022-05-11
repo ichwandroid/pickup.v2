@@ -1,3 +1,7 @@
+<?php
+  include 'config/config.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -100,12 +104,7 @@
                       <use xlink:href="#calendar3" />
                     </svg>
                     <small>
-                      <div>
-                        <script>
-                          date = new Date().toLocaleDateString();
-                          document.write(date);
-                        </script>
-                      </div>
+                      <div><?php echo $countscan; ?> Student data entered</div>
                     </small>
                   </li>
                 </ul>
@@ -159,7 +158,7 @@
                 <a href="rombel/kelas1a/data-pickup.php" class="btn btn-primary">Open</a>
               </div>
               <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text-muted">Last updated, <?php echo $count1a; ?> Scanned</small>
               </div>
             </div>
           </div>
@@ -171,7 +170,7 @@
                 <a href="rombel/kelas1b/data-pickup.php" class="btn btn-primary">Open</a>
               </div>
               <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text-muted">Last updated, <?php echo $count1b; ?> Scanned</small>
               </div>
             </div>
           </div>
@@ -183,7 +182,7 @@
                 <a href="rombel/kelas1c/data-pickup.php" class="btn btn-primary">Open</a>
               </div>
               <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text-muted">Last updated, <?php echo $count1c; ?> Scanned</small>
               </div>
             </div>
           </div>
@@ -195,56 +194,56 @@
                 <a href="rombel/kelas1d/data-pickup.php" class="btn btn-primary">Open</a>
               </div>
               <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text-muted">Last updated, <?php echo $count1d; ?> Scanned</small>
               </div>
             </div>
           </div>
 
           <div class="col">
-            <div class="card border-primary h-100">
+            <div class="card border-success h-100">
               <div class="card-body">
                 <h5 class="card-title"><i class="fas fa-chalkboard-teacher"></i> Class 2 A</h5>
                 <p class="card-text">Detail data of students who have been picked up and edit status.</p>
-                <a href="rombel/kelas2a/data-pickup.php" class="btn btn-primary">Open</a>
+                <a href="rombel/kelas2a/data-pickup.php" class="btn btn-success">Open</a>
               </div>
               <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text-muted">Last updated, <?php echo $count2a; ?> Scanned</small>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card border-primary h-100">
+            <div class="card border-success h-100">
               <div class="card-body">
                 <h5 class="card-title"><i class="fas fa-chalkboard-teacher"></i> Class 2 B</h5>
                 <p class="card-text">Detail data of students who have been picked up and edit status.</p>
-                <a href="rombel/kelas2b/data-pickup.php" class="btn btn-primary">Open</a>
+                <a href="rombel/kelas2b/data-pickup.php" class="btn btn-success">Open</a>
               </div>
               <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text-muted">Last updated, <?php echo $count2b; ?> Scanned</small>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card border-primary h-100">
+            <div class="card border-success h-100">
               <div class="card-body">
                 <h5 class="card-title"><i class="fas fa-chalkboard-teacher"></i> Class 2 C</h5>
                 <p class="card-text">Detail data of students who have been picked up and edit status.</p>
-                <a href="rombel/kelas2c/data-pickup.php" class="btn btn-primary">Open</a>
+                <a href="rombel/kelas2c/data-pickup.php" class="btn btn-success">Open</a>
               </div>
               <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text-muted">Last updated, <?php echo $count2c; ?> Scanned</small>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card border-primary h-100">
+            <div class="card border-success h-100">
               <div class="card-body">
                 <h5 class="card-title"><i class="fas fa-chalkboard-teacher"></i> Class 2 D</h5>
                 <p class="card-text">Detail data of students who have been picked up and edit status.</p>
-                <a href="rombel/kelas2d/data-pickup.php" class="btn btn-primary">Open</a>
+                <a href="rombel/kelas2d/data-pickup.php" class="btn btn-success">Open</a>
               </div>
               <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text-muted">Last updated, <?php echo $count2d; ?> Scanned</small>
               </div>
             </div>
           </div>
@@ -256,99 +255,99 @@
 
         <div class="row row-cols-1 row-cols-md-4 g-4">
           <div class="col">
-            <div class="card border-primary h-100">
+            <div class="card border-danger h-100">
               <div class="card-body">
                 <h5 class="card-title"><i class="fas fa-chalkboard-teacher"></i> Class 3 A</h5>
                 <p class="card-text">Detail data of students who have been picked up and edit status.</p>
-                <a href="rombel/kelas3a/data-pickup.php" class="btn btn-primary">Open</a>
+                <a href="rombel/kelas3a/data-pickup.php" class="btn btn-danger">Open</a>
               </div>
               <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text-muted">Last updated, <?php echo $count3a; ?> Scanned</small>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card border-primary h-100">
+            <div class="card border-danger h-100">
               <div class="card-body">
                 <h5 class="card-title"><i class="fas fa-chalkboard-teacher"></i> Class 3 B</h5>
                 <p class="card-text">Detail data of students who have been picked up and edit status.</p>
-                <a href="rombel/kelas3b/data-pickup.php" class="btn btn-primary">Open</a>
+                <a href="rombel/kelas3b/data-pickup.php" class="btn btn-danger">Open</a>
               </div>
               <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text-muted">Last updated, <?php echo $count3b; ?> Scanned</small>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card border-primary h-100">
+            <div class="card border-danger h-100">
               <div class="card-body">
                 <h5 class="card-title"><i class="fas fa-chalkboard-teacher"></i> Class 3 C</h5>
                 <p class="card-text">Detail data of students who have been picked up and edit status.</p>
-                <a href="rombel/kelas3c/data-pickup.php" class="btn btn-primary">Open</a>
+                <a href="rombel/kelas3c/data-pickup.php" class="btn btn-danger">Open</a>
               </div>
               <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text-muted">Last updated, <?php echo $count3c; ?> Scanned</small>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card border-primary h-100">
+            <div class="card border-danger h-100">
               <div class="card-body">
                 <h5 class="card-title"><i class="fas fa-chalkboard-teacher"></i> Class 3 D</h5>
                 <p class="card-text">Detail data of students who have been picked up and edit status.</p>
-                <a href="rombel/kelas3d/data-pickup.php" class="btn btn-primary">Open</a>
+                <a href="rombel/kelas3d/data-pickup.php" class="btn btn-danger">Open</a>
               </div>
               <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text-muted">Last updated, <?php echo $count3d; ?> Scanned</small>
               </div>
             </div>
           </div>
 
           <div class="col">
-            <div class="card border-primary h-100">
+            <div class="card border-warning h-100">
               <div class="card-body">
                 <h5 class="card-title"><i class="fas fa-chalkboard-teacher"></i> Class 4 A</h5>
                 <p class="card-text">Detail data of students who have been picked up and edit status.</p>
-                <a href="rombel/kelas4a/data-pickup.php" class="btn btn-primary">Open</a>
+                <a href="rombel/kelas4a/data-pickup.php" class="btn btn-warning">Open</a>
               </div>
               <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text-muted">Last updated, <?php echo $count4a; ?> Scanned</small>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card border-primary h-100">
+            <div class="card border-warning h-100">
               <div class="card-body">
                 <h5 class="card-title"><i class="fas fa-chalkboard-teacher"></i> Class 4 B</h5>
                 <p class="card-text">Detail data of students who have been picked up and edit status.</p>
-                <a href="rombel/kelas4b/data-pickup.php" class="btn btn-primary">Open</a>
+                <a href="rombel/kelas4b/data-pickup.php" class="btn btn-warning">Open</a>
               </div>
               <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text-muted">Last updated, <?php echo $count4b; ?> Scanned</small>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card border-primary h-100">
+            <div class="card border-warning h-100">
               <div class="card-body">
                 <h5 class="card-title"><i class="fas fa-chalkboard-teacher"></i> Class 4 C</h5>
                 <p class="card-text">Detail data of students who have been picked up and edit status.</p>
-                <a href="rombel/kelas4c/data-pickup.php" class="btn btn-primary">Open</a>
+                <a href="rombel/kelas4c/data-pickup.php" class="btn btn-warning">Open</a>
               </div>
               <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text-muted">Last updated, <?php echo $count4c; ?> Scanned</small>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card border-primary h-100">
+            <div class="card border-warning h-100">
               <div class="card-body">
                 <h5 class="card-title"><i class="fas fa-chalkboard-teacher"></i> Class 4 D</h5>
                 <p class="card-text">Detail data of students who have been picked up and edit status.</p>
-                <a href="rombel/kelas4d/data-pickup.php" class="btn btn-primary">Open</a>
+                <a href="rombel/kelas4d/data-pickup.php" class="btn btn-warning">Open</a>
               </div>
               <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text-muted">Last updated, <?php echo $count4d; ?> Scanned</small>
               </div>
             </div>
           </div>
@@ -360,99 +359,99 @@
 
         <div class="row row-cols-1 row-cols-md-4 g-4">
           <div class="col">
-            <div class="card border-primary h-100">
+            <div class="card border-info h-100">
               <div class="card-body">
                 <h5 class="card-title"><i class="fas fa-chalkboard-teacher"></i> Class 5 A</h5>
                 <p class="card-text">Detail data of students who have been picked up and edit status.</p>
-                <a href="rombel/kelas5a/data-pickup.php" class="btn btn-primary">Open</a>
+                <a href="rombel/kelas5a/data-pickup.php" class="btn btn-info">Open</a>
               </div>
               <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text-muted">Last updated, <?php echo $count5a; ?> Scanned</small>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card border-primary h-100">
+            <div class="card border-info h-100">
               <div class="card-body">
                 <h5 class="card-title"><i class="fas fa-chalkboard-teacher"></i> Class 5 B</h5>
                 <p class="card-text">Detail data of students who have been picked up and edit status.</p>
-                <a href="rombel/kelas5b/data-pickup.php" class="btn btn-primary">Open</a>
+                <a href="rombel/kelas5b/data-pickup.php" class="btn btn-info">Open</a>
               </div>
               <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text-muted">Last updated, <?php echo $count5b; ?> Scanned</small>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card border-primary h-100">
+            <div class="card border-info h-100">
               <div class="card-body">
                 <h5 class="card-title"><i class="fas fa-chalkboard-teacher"></i> Class 5 C</h5>
                 <p class="card-text">Detail data of students who have been picked up and edit status.</p>
-                <a href="rombel/kelas5c/data-pickup.php" class="btn btn-primary">Open</a>
+                <a href="rombel/kelas5c/data-pickup.php" class="btn btn-info">Open</a>
               </div>
               <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text-muted">Last updated, <?php echo $count5c; ?> Scanned</small>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card border-primary h-100">
+            <div class="card border-info h-100">
               <div class="card-body">
                 <h5 class="card-title"><i class="fas fa-chalkboard-teacher"></i> Class 5 D</h5>
                 <p class="card-text">Detail data of students who have been picked up and edit status.</p>
-                <a href="rombel/kelas5d/data-pickup.php" class="btn btn-primary">Open</a>
+                <a href="rombel/kelas5d/data-pickup.php" class="btn btn-info">Open</a>
               </div>
               <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text-muted">Last updated, <?php echo $count5d; ?> Scanned</small>
               </div>
             </div>
           </div>
 
           <div class="col">
-            <div class="card border-primary h-100">
+            <div class="card border-dark h-100">
               <div class="card-body">
                 <h5 class="card-title"><i class="fas fa-chalkboard-teacher"></i> Class 6 A</h5>
                 <p class="card-text">Detail data of students who have been picked up and edit status.</p>
-                <a href="rombel/kelas6a/data-pickup.php" class="btn btn-primary">Open</a>
+                <a href="rombel/kelas6a/data-pickup.php" class="btn btn-dark">Open</a>
               </div>
               <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text-muted">Last updated, <?php echo $count6a; ?> Scanned</small>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card border-primary h-100">
+            <div class="card border-dark h-100">
               <div class="card-body">
                 <h5 class="card-title"><i class="fas fa-chalkboard-teacher"></i> Class 6 B</h5>
                 <p class="card-text">Detail data of students who have been picked up and edit status.</p>
-                <a href="rombel/kelas6b/data-pickup.php" class="btn btn-primary">Open</a>
+                <a href="rombel/kelas6b/data-pickup.php" class="btn btn-dark">Open</a>
               </div>
               <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text-muted">Last updated, <?php echo $count6b; ?> Scanned</small>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card border-primary h-100">
+            <div class="card border-dark h-100">
               <div class="card-body">
                 <h5 class="card-title"><i class="fas fa-chalkboard-teacher"></i> Class 6 C</h5>
                 <p class="card-text">Detail data of students who have been picked up and edit status.</p>
-                <a href="rombel/kelas6c/data-pickup.php" class="btn btn-primary">Open</a>
+                <a href="rombel/kelas6c/data-pickup.php" class="btn btn-dark">Open</a>
               </div>
               <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text-muted">Last updated, <?php echo $count6c; ?> Scanned</small>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card border-primary h-100">
+            <div class="card border-dark h-100">
               <div class="card-body">
                 <h5 class="card-title"><i class="fas fa-chalkboard-teacher"></i> Class 6 D</h5>
                 <p class="card-text">Detail data of students who have been picked up and edit status.</p>
-                <a href="rombel/kelas6d/data-pickup.php" class="btn btn-primary">Open</a>
+                <a href="rombel/kelas6d/data-pickup.php" class="btn btn-dark">Open</a>
               </div>
               <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text-muted">Last updated, <?php echo $count6d; ?> Scanned</small>
               </div>
             </div>
           </div>
