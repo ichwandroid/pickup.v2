@@ -44,7 +44,7 @@
     
   <div class="col-lg-10 mx-auto p-3 py-md-5">
     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-    <a href="index.html"><button class="btn btn-primary me-md-2" type="button">Home</button></a>
+    <a href="index.php"><button class="btn btn-primary me-md-2" type="button">Home</button></a>
   </div>
   <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
     <span class="fs-4"><i class="fas fa-dragon"></i> Track Pickup Dashboard</span>

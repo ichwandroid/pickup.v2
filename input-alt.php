@@ -57,7 +57,7 @@
 <div class="container">
   <main>
     <div class="text-center" style="padding-top:40px">
-      <a href="index.html"><h2><i class="fas fa-dragon"></i></h2></a>
+      <a href="index.php"><h2><i class="fas fa-dragon"></i></h2></a>
       <h2>Update Status Student</h2>
       <p class="lead">Update student conditions according to class conditions.</p>
 

@@ -56,7 +56,7 @@
     
 <main class="form-signin">
   <form method="POST">
-    <a href="index.html">
+    <a href="index.php">
       <h1><i class="fas fa-dragon"></i></h1>
     </a>
     <h1 class="h3 mb-3 fw-normal">Please Scan Barcode</h1>
