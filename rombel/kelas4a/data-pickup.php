@@ -66,7 +66,7 @@
         </tr>
       </thead>
       <tbody>
-        <?php $crud->dataviewguru("SELECT * FROM tbl_siswa JOIN tbl_scan ON tbl_scan.NIS = tbl_siswa.NIS WHERE KELAS='1 A - ZAINAB R.A' ORDER BY TIMESCAN DESC");?>
+        <?php $crud->dataviewguru("SELECT * FROM tbl_siswa JOIN tbl_scan ON tbl_scan.NIS = tbl_siswa.NIS WHERE KELAS='4 A - GAZALAH AL-HARURIAH' ORDER BY TIMESCAN DESC");?>
       </tbody>
     </table>
     
